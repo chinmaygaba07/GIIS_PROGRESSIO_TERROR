@@ -1,0 +1,22 @@
+#negative check
+T = input("Enter the number of test cases : ")
+j = 0
+T = int(T)
+while( j < T ):
+    X = int(input("Enter the height of Alice : "))
+    Y = int(input("Enter the height of Bob : "))
+    if(X>100 and X<200):
+        if(Y>100 and Y<200):
+            if X < Y:
+                print("Bob is taller than Alice")
+            else:
+                print("Alice is taller than Bob")
+                j += 1
+                print('function over')
+                break
+        else:
+            print("Enter a Valid Height for Bob between 100cm and 200cm")
+            break
+    else:
+        print("Enter a valid Height for Alice between 100cm and 200cm!")
+print("Enter a positive number")

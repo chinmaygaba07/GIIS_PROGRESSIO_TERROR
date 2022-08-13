@@ -1,0 +1,193 @@
+from time import sleep
+#import pygame
+#import turtle
+#money
+points = 0
+change = 100
+okok=55
+bad=10
+print("You are at home and need to take a bath.")
+sleep(2.00)
+print("You have the option of either taking a shower or filling water in a bucket and then using it.")
+sleep(3.00)
+c3 = input("if you wish to take a shower then enter 'S' \nif you wish to bathe with a water bucket then enter 'W' : ")
+while c3=="S"or"s"or"w"or"W":
+    if c3 == "S":
+        points = points+bad
+        print("Your current points : " + str(points))
+        break
+    elif c3 == "s":
+        points = points+bad
+        print("Your current points : " + str(points))    
+        break
+    elif c3 == "W":
+        points = points+change
+        print("Your current points : " + str(points))
+        break
+    elif c3 == "w":
+        points = points+change
+        print("Your current points : " + str(points))    
+        break
+    else:
+        print("please enter valid letter")
+        
+sleep(1.50)
+print("You are going on a jog and reach Fair Price. You now decide to get some household essentials")
+sleep(2.00)
+print("You need to buy some potatoes but have to choose between two Brands")
+sleep(2.50)
+print("There are 'Organic Australian white Potatoes' or 'Holland Potatoes(inorganic)'. They are roughly the same price.")
+sleep(3.00)
+c1 = input("if you wish to buy organic then enter 'A' else if you choose to buy inorganic enter 'B' : ")
+while c1 == "A" or "a" or "B" or "b":
+    if c1 == "a":
+        points = points+change
+        print("Your current points : " + str(points))
+        break
+    elif c1 == "A":
+        points = points+change
+        print("Your current points : " + str(points))
+        break
+    elif c1 == "b":
+        points = points + bad
+        print("Your current points : " + str(points))
+        break
+    elif c1 == "B" :
+        points = points + bad
+        print("Your current points : " + str(points))  
+        break
+    else :
+        print("please enter valid letter")
+
+sleep(1.50)
+print("You are now done with your shopping. Now you must checkout at the kiosk ")
+sleep(2.50)
+print("The cashier asks you if you want to donate money to charities that help clean The Great Pacific Garbage Patch.")
+sleep(3.00)
+c2 = input("if you wish to donate the money then enter 'x' else if not enter 'y' : ")
+while c2=="x"or "X"or"y"or"Y":
+    if c2 == "x":
+        points = points+change
+        print("Your current points : " + str(points))
+        break
+    if c2 == "X":
+        points = points+change
+        print("Your current points : " + str(points))    
+        break
+    elif c2 == "Y":
+        points = points+bad
+        print("Your current points : " + str(points))
+        break
+    elif c2 == "y":
+        points = points+bad
+        print("Your current points : " + str(points)) 
+        break
+    else :
+        print("please enter valid letter")
+        break
+
+print("")
+sleep(1.50)
+print("The cashier is bagging your items now.")
+sleep(2.00)
+print("They ask you whether you would like a plastic or a cloth bag. A cloth bag's price is twice of the plastic bag's.")
+sleep(3.50)
+c4 = input("if you wish to use a plastic bag enter 'p' else if you wish to use a cloth bag enter 'c' :")
+while c4 == "C"or"c"or"P"or"p":
+    if c4 == "C":
+        points = points+change
+        print("Your current points : " + str(points))
+        break
+    elif c4 == "c":
+        points = points+change
+        print("Your current points : " + str(points))    
+        break
+    elif c4 == "P":
+        points = points+bad
+        print("Your current points : " + str(points))
+        break
+    elif c4 == "p":
+        points = points+bad
+        print("Your current points : " + str(points)) 
+        break
+    else :
+        print("please enter valid letter")
+        break
+
+print("")
+sleep(1.50)
+print("After this grocery shopping you need to go back home but cannot jog back, since you are out of energy.")
+sleep(2.50)
+print("You can either take the MRT or you can take a taxi or an electric car.")
+sleep(2.00)
+c5 = input("if you wish to take the MRT enter 'm' \n if you wish to take the taxi enter 't' \n if you wish to take electric car enter 'e'  : ")
+while c5 == "M"or"m"or"t"or"T"or"e"or"E":
+    if c5 == "m":
+        points = points+okok
+        print("Your current points : " + str(points))
+        break
+    elif c5 == "M":
+        points = points+okok
+        print("Your current points : " + str(points))
+        break
+    elif c5 == "t":
+        points = points+bad
+        print("Your current points : " + str(points))
+        break
+    elif c5 == "T":
+        points = points+bad
+        print("Your current points : " + str(points)) 
+        break
+    elif c5 == "e":
+        points = points+change
+        print("Your current points : " + str(points))
+        break
+    elif c5 == "E":
+        points = points+change
+        print("Your current points : " + str(points))  
+        break
+    else :
+        print("please enter valid letter")
+        break
+sleep(1.50)
+print("It is almost night-time now and you are about to sleep.")
+sleep(2.00)
+print("Due to the warm weather of Singapore, you need to decide between using a tablefan or an "
+      "air conditioner throughout the night.")
+sleep(3.00)
+c6 = input("if you wish to use the table fan enter 'f' \nif you wish to use the air conditioner enter 'ac'")
+while c6=="f"or"F"or"AC"or"ac"or"Ac"or"aC":
+    if c6 == "f":
+        points = points+change
+        print("Your current points : " + str(points))
+        break
+    elif c6 == "F":
+        points = points+change
+        print("Your current points : " + str(points))
+        break
+    elif c6 == "Ac":
+        points = points+bad
+        print("Your current points : " + str(points))
+        break
+    elif c6 == "AC":
+        points = points+bad
+        print("Your current points : " + str(points))
+        break
+    elif c6 == "ac":
+        points = points+bad
+        print("Your current points : " + str(points)) 
+        break
+    elif c6 == "aC":
+        points = points+bad
+        print("Your current points : " + str(points))
+        break
+    else :
+        print("please enter valid letter")
+        break
+sleep(1.50)
+if points >= 350:
+    print("Congratulations! You are an environmentally friendly person.🤩")
+elif points >= 250:
+    print("your choices are good but can be better... 😎")
+else:
+    print("uh oh, you should really reconsider your choices...🧐")
